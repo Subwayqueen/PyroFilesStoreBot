@@ -168,7 +168,7 @@ async def main(bot, message):
 			await forwarded_msg.reply_text(f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!", parse_mode="Markdown", disable_web_page_preview=True)
 			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=FlixBots_{file_er_id}"
 			await editable.edit(
-				f"**FILE STORED SUCCESSFULLY ⭕️\n\nLink To Your Link Is Below :**\n\nhttps://telegram.dog/{BOT_USERNAME}?start=FlixBots_{file_id}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
+				f"**FILE STORED SUCCESSFULLY ⭕️\n\nLink To Your Link Is Below :**\n\n{share_link}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
 					[[InlineKeyboardButton("Open Link 🔍", url=share_link)], [InlineKeyboardButton("Channel", url="https://t.me/FlixBots"), InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot")]]
