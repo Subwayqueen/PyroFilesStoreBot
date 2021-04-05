@@ -65,7 +65,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -90,7 +90,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -102,8 +102,8 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+						InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot"),
+						InlineKeyboardButton("Channel", url="https://t.me/FlixBots")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -120,7 +120,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -146,7 +146,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -171,7 +171,7 @@ async def main(bot, message):
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]
+					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Channel", url="https://t.me/FlixBots"), InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot")]]
 				),
 				disable_web_page_preview=True
 			)
@@ -261,13 +261,13 @@ async def broadcast_(c, m):
 	await out.delete()
 	if failed == 0:
 	    await m.reply_text(
-	        text=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.",
+	        text=f"Broadcast Completed In `{completed_in}`\n\nTotal Users : {total_users}.\nTotal Done : {done}, {success} Success & {failed} Failed.",
 	        quote=True
 	    )
 	else:
 	    await m.reply_document(
 	        document='broadcast.txt',
-	        caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.",
+	        caption=f"Broadcast Completed In `{completed_in}`\n\nTotal Users : {total_users}.\nTotal Done : {done}, {success} Success & {failed} Failed.",
 	        quote=True
 	    )
 	await os.remove('broadcast.txt')
@@ -322,8 +322,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+						InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot"),
+						InlineKeyboardButton("Channel", url="https://t.me/FlixBots")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -339,7 +339,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -362,7 +362,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -374,8 +374,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+						InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot"),
+						InlineKeyboardButton("Channel", url="https://t.me/FlixBots")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
