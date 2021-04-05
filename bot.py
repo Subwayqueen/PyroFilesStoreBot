@@ -154,7 +154,7 @@ async def start(bot, cmd):
 		try:
 			file_id = int(usr_cmd)
 			send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL, message_id=file_id)
-			await send_stored_file.reply_text(f"**Link To Your Link Is Below :**\n\n{share_link}\n\n**To Retrive The Stored File, Just Open The Link! 👍**", disable_web_page_preview=True, quote=True)
+			await send_stored_file.reply_text(f"**Link To Your File Is Below :**\n\nhttps://telegram.dog/{BOT_USERNAME}?start=FlixBots_{file_id}\n\n**To Retrive The Stored File, Just Open The Link! 👍"**, disable_web_page_preview=True, quote=True)
 		except Exception as err:
 			await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
@@ -168,7 +168,7 @@ async def main(bot, message):
 			await forwarded_msg.reply_text(f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!", parse_mode="Markdown", disable_web_page_preview=True)
 			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=FlixBots_{file_er_id}"
 			await editable.edit(
-				f"**FILE STORED SUCCESSFULLY ⭕️\n\nLink To Your Link Is Below :**\n\n{share_link}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
+				f"**FILE STORED SUCCESSFULLY ⭕️\n\nLink To Your File Is Below :**\n\n{share_link}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
 					[[InlineKeyboardButton("Open Link 🔍", url=share_link)], [InlineKeyboardButton("Channel", url="https://t.me/FlixBots"), InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot")]]
