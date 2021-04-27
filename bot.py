@@ -295,12 +295,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("SOURCE CODE ⚠",
+                        InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 ⚠",
                                              url="https://t.me/NoSourceCode")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝗚𝗢 𝗛𝗢𝗠𝗘", callback_data="gotohome"),
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗗𝗘𝗩", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -313,12 +313,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("SOURCE CODE ⚠",
+                        InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 ⚠",
                                              url="https://t.me/NoSourceCode")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗕𝗢𝗧", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝗚𝗢 𝗛𝗢𝗠𝗘", callback_data="gotohome")
                     ]
                 ]
             )
