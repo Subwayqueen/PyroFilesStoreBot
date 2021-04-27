@@ -38,6 +38,18 @@
         },
         "LOG_CHANNEL": {
             "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+        },
+        "BANNED_USERS": {
+            "description": "Banned unwanted members",
+            "required": false
+        },
+        "BANNED_CHAT_IDS": {
+            "description": "Banned unwanted channel IDs",
+            "required": false
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "Broadcast with Forward Tag or as Copy(Without Forward Tag). Value should be True/False !!",
+            "required": false
         }
     },
     "buildpacks": [
