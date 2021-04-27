@@ -68,12 +68,12 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("SUPPORT BOT 👥", url="https://t.me/FlixHelpBot"),
-			InlineKeyboardButton("CHANNEL 🔊", url="https://t.me/FlixBots")
+                        InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot"),
+			InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔊", url="https://t.me/FlixBots")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗕𝗢𝗧", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗗𝗘𝗩", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -136,8 +136,8 @@ async def main(bot, message):
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("OPEN LINK 🔓", url=share_link)],
-                     [InlineKeyboardButton("CHANNEL 🔊", url="https://t.me/FlixBots"),
-                      InlineKeyboardButton("SUPPORT BOT 👥", url="https://t.me/FlixHelpBot")]]
+                     [InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔊", url="https://t.me/FlixBots"),
+                      InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -331,12 +331,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("SUPPORT BOT 👥", url="https://t.me/FlixHelpBot"),
-			InlineKeyboardButton("CHANNEL 🔊", url="https://t.me/FlixBots")
+                        InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot"),
+			InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔊", url="https://t.me/FlixBots")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗕𝗢𝗧", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗗𝗘𝗩", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -383,12 +383,12 @@ async def button(bot, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("SUPPORT BOT 👥", url="https://t.me/FlixHelpBot"),
-			InlineKeyboardButton("CHANNEL 🔊", url="https://t.me/FlixBots")
+                        InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot"),
+			InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔊", url="https://t.me/FlixBots")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗕𝗢𝗧", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝗔𝗕𝗢𝗨𝗧 𝗗𝗘𝗩", callback_data="aboutdevs")
                     ]
                 ]
             )
