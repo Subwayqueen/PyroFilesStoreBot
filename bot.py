@@ -87,7 +87,7 @@ async def start(bot, cmd):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**FILE STORED SUCCESSFULLY ⭕️\n\nLink To Your File Is Below :**\n\n{share_link}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
+                f"**Link To Your File Is Below :**\n\nhttps://t.me/{Config.BOT_USERNAME}?start=view_{file_id}\n\n**To Retrive The Stored File, Just Open The Link! 👍**",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
